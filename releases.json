@@ -1,284 +1,409 @@
 [
   {
-    "tag_name": "launcher-1.0.10",
-    "body": "- Лаунчер автоматически продолжает загрузку с места обрыва при тайм-ауте и других временных сбоях соединения с GitHub.\n- Сообщения об ошибках скачивания и установки теперь отображаются на выбранном языке.\n- Проверено на публичном архиве WoD 2.0d с имитацией тайм-аута и проверкой SHA-256.\n\nДля чистой установки распакуйте WOD-Launcher-2.0c-win64.zip и запустите WOD Launcher.exe. WoDLauncher.zip предназначен для автообновления.",
+    "tag_name": "launcher-1.0.14",
+    "body": "Лаунчер скачивает обычный ZIP, общий BIG лобби и WarMindExtension.dll для выбранной версии мода. Каждый файл проверяется по SHA-256. В канале Test доступна новая нумерация WarMind начиная с 0.0a.\n\nДля первой установки скачайте полный WarMind-Launcher-win64.zip. Файл WoDLauncher.zip используется для автоматического обновления.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 772967589,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31225148,
-        "digest": "sha256:2381e2ded180ae1bbfab26acd394c7c41bfff6d625cbb3a3779d008c9f540345",
+        "id": 776582102,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31096743,
+        "digest": "sha256:3c4ef482adeb2d5da5c759484ebe622510d046f80024b51c673671f8d3cf50eb",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.10/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.14/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 772967125,
+        "id": 776582149,
         "name": "WoDLauncher.zip",
-        "size": 3229085,
-        "digest": "sha256:6d1b41907e2a71f09cdf9f7f449d04b5cfd83513fb1102b08f6751187ee92982",
+        "size": 3126381,
+        "digest": "sha256:d941c8011d06f324be067c89bde9fd5e3c9f04114dabb7a5284d609d7a2de34c",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.10/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.14/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.11",
-    "body": "Лаунчер добавляет поддержку WoD 2.0e в обычном канале и устанавливает обновлённый игровой модуль для личного автовыбора.\n\nПосле обновления лаунчера выберите «Последняя доступная» и скачайте WoD 2.0e. Для новой установки используйте WOD-Launcher-2.0c-win64.zip. WoDLauncher.zip применяется автоматически.",
+    "tag_name": "launcher-1.0.15",
+    "body": "Исправлен запуск WarMind 0.0a. Для русского и английского используется один `WarMind_0.0a.skudef`, поэтому движок получает одинаковые имя мода и номер версии. При запуске меняется ссылка на языковой BIG.\n\nЛаунчер переносит сведения об установленных модах и файл блокировки в AppData. Уже установленные файлы WarMind сохраняются.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 773341108,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31243981,
-        "digest": "sha256:0192b247f6377786e4ea1ead50dccd9906956243d5cac3f2b83e7bea5c65164f",
+        "id": 776775695,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31099859,
+        "digest": "sha256:589f0e88ebcadad8239034a5fab967b16a93ca426a978cc3d866672ad738f98f",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.11/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.15/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 773340753,
+        "id": 776775694,
         "name": "WoDLauncher.zip",
-        "size": 3238339,
-        "digest": "sha256:29be83a1759e4cca85569a8d84dced1f4bfe14c123403c22c8866c8262ca3bcd",
+        "size": 3129584,
+        "digest": "sha256:9780ef4e2369e366bb6ac5e32342307a04e45bc105f42fe4a89db771eabf0cfb",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.11/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.15/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.12",
-    "body": "Обновлён игровой модуль для WoD 2.0f. В сетевой игре он согласует автовыбор при старте и передаёт только признак настроенного автовыбора для значков игроков.\n\nСначала обновите лаунчер, затем выберите WoD 2.0f в обычном канале. Для новой установки используйте WOD-Launcher-2.0c-win64.zip. WoDLauncher.zip применяется автоматически.",
+    "tag_name": "launcher-1.0.16",
+    "body": "## Изменения\n\n- ZIP мода скачивается с Google Drive по ссылке из описания релиза. BIG лобби, DLL и автообновление лаунчера скачиваются с GitHub.\n- Сборки устанавливаются в `Документы\\WarMind`. Локальные сборки из `Документы\\Red Alert 3\\Mods\\WarMind` тоже доступны в списке версий.\n- «Последняя доступная» сравнивает номера локальных сборок и релизов, в том числе версии с суффиксами `a0`, `a1`, `a2`.\n- Настройки и журналы хранятся рядом с лаунчером. Готовность версии определяется по её игровым файлам.\n\nДля первой установки распакуйте `WarMind-Launcher-win64.zip`. Файл `WoDLauncher.zip` используется автообновлением.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 773460226,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31250369,
-        "digest": "sha256:6eb22e1ea1eed85e3c53d307f52956f94485df33370f84eacdcb5d215c20dced",
+        "id": 776907354,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31170432,
+        "digest": "sha256:b6414016cfd2478b9956980ea8bfd2a9e41dcdd89bc2844626f9c3041c572de8",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.12/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.16/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 773459590,
+        "id": 776907355,
         "name": "WoDLauncher.zip",
-        "size": 3241402,
-        "digest": "sha256:a6922b5823c4335f1bb1b80e1a0f292502a918dfba7e12282f2cc3aa7a547abb",
+        "size": 3198688,
+        "digest": "sha256:bcb8d7d6904100e740d0a34b5eb30ff345949fc668fc44f2c388d73f697aa172",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.12/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.16/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.4",
-    "body": "Папочный WoD Launcher 1.0.4. Лаунчер проверяет обновления и скачивает WoD 2.0c из публичного репозитория WODCSA-Releases. Список версий ограничен восемью строками с прокруткой. Игра стартует в полноэкранном оконном режиме. Правила лобби передаются через штатные сетевые настройки комнаты. Добавлен профиль Retail 1.12 для проверенного образа; профиль Steam сохранён. Для первого перехода с лаунчера 1.0.3 скачайте полный архив WOD-Launcher-2.0c-win64.zip.",
+    "tag_name": "launcher-1.0.17",
+    "body": "В описании релиза мода достаточно одной публичной ссылки на ZIP на Google Диске. Лаунчер игнорирует строки с размером и SHA-256 архива в старых описаниях.\n\nДля установки с нуля скачайте и распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер загрузит WoDLauncher.zip при автообновлении.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 769202620,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31206461,
-        "digest": "sha256:95ca1a83087625592381f33bd00edd1935d7dfedd1b594c573e7fc6d5f752941",
+        "id": 777469516,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31208832,
+        "digest": "sha256:78bddebab95f9ce745498672de855dc2d6fea8719e838250dd5f32c01376dde4",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.4/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.17/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 769202264,
+        "id": 777469581,
         "name": "WoDLauncher.zip",
-        "size": 3212675,
-        "digest": "sha256:b7024248f7350ec33cc02aeef7a5c8c3c84d430462262d11076986f5a6845212",
+        "size": 3197747,
+        "digest": "sha256:6c860607602fa6d673738df148e43d04ce75b6c86bff8ed543fb68764f7846a8",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.4/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.17/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.5",
-    "body": "- Номер версии лаунчера отображается в заголовке окна.\n- Red Alert 3 запускается со штатными настройками режима экрана.\n\nДля установки с нуля скачайте WOD-Launcher-2.0c-win64.zip и распакуйте весь архив в одну папку. WoDLauncher.zip используется для автообновления переносимой версии.",
+    "tag_name": "launcher-1.0.18",
+    "body": "- Для каждой версии WarMind скачивается один ZIP со всеми доступными локализациями.\n- Если выбранной локализации нет, лаунчер запускает английскую из установленного мода. Настройка языка сохраняется.\n- Обновлены подписи на русском и английском, в том числе для установок, получающих автообновление.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 769292585,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31205501,
-        "digest": "sha256:0b794cf280ddcd8438362cdc1d14a59cc541cddbd21c98c521c21dbd39328512",
+        "id": 779314231,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31168960,
+        "digest": "sha256:048b79d45805177e493d4020615c1c5291d66b8337aca628b59cdb511637846d",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.5/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.18/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 769292284,
+        "id": 779314369,
         "name": "WoDLauncher.zip",
-        "size": 3212173,
-        "digest": "sha256:0c52b0439be14c30a9fd9188db880fc715c1231ad398b1aea7e8d5caa889695c",
+        "size": 3198394,
+        "digest": "sha256:f4c1c3ae502c2a7af4479c79927dfe5f77406b1d0247d9182190f95373336063",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.5/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.18/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.6",
-    "body": "- Обновления лаунчера и список версий мода читаются из публичного каталога GitHub без токена.\n- Архивы скачиваются по публичным ссылкам и проверяются по SHA-256.\n- Если старая версия показывает сообщение о доступе GitHub, скачайте и распакуйте весь WOD-Launcher-2.0c-win64.zip. Код Test используется для тестовых версий мода.",
+    "tag_name": "launcher-1.0.19",
+    "body": "- Скорость скачивания отображается по фактически полученным байтам ZIP, BIG и DLL.\n- Процент загрузки учитывает размер общего ZIP из ответа Google Drive и размер оставшихся файлов. При восстановлении установки учитываются только недостающие файлы.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 769346120,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31205982,
-        "digest": "sha256:10abd7f8ae4615c50d582b702e79c3a7f501b2eb675c56c135cdcae441b7ba5e",
+        "id": 779372942,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31170051,
+        "digest": "sha256:58ef18d01cc62199eedede41089f004e1333b2f472a1575f0247045e402ba0e8",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.6/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.19/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 769345786,
+        "id": 779373034,
         "name": "WoDLauncher.zip",
-        "size": 3212654,
-        "digest": "sha256:3598bc9988c96da0561b0d8d3cfdd242cbe07a3a6841c658a232c9b265bcfd30",
+        "size": 3199702,
+        "digest": "sha256:2411522cc4f555e71556f8fa45a504e583230fd1b63e6ac371dd9d3df91678c2",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.6/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.19/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.7",
-    "body": "В комплект входит обновлённая DLL для штатного выбора случайных фракций в «Схватке». Для полного исправления WoD 2.0c также нужен обновлённый WOD_2.0c_Lobby.big в установленном моде.\n\nПереносимая версия 1.0.6 предложит автообновление. Для новой установки распакуйте весь WOD-Launcher-2.0c-win64.zip.",
+    "tag_name": "launcher-1.0.20",
+    "body": "- Скорость скачивания усредняется за последние три секунды. Во время пауз показание плавно снижается.\n- В русском интерфейсе скорость отображается в КБ/с и МБ/с.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 772171088,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31208317,
-        "digest": "sha256:d4924052ac99a82a35dc20e1455693d4f1afd6443179fed5a87a31c5d75c6138",
+        "id": 779499067,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31172003,
+        "digest": "sha256:725e445fddc1dbbf786eda18b43d464d98073569b6aa81a8e7743f92cd8bee30",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.7/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.20/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 772170734,
+        "id": 779499219,
         "name": "WoDLauncher.zip",
-        "size": 3213902,
-        "digest": "sha256:6fb43e9a856f92b165e6e0252a63f149d8f63e6518aca8b97bcf1faea15682cd",
+        "size": 3200912,
+        "digest": "sha256:2df7955c1df5efb76120ecdd83f7e9bff7ed0186f58a71950185af6adeb68e3a",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.7/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.20/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.8",
-    "body": "WoD 2.0c скачивается одним архивом с русским и английским языковыми BIG. После установки язык переключается в меню лаунчера. Для обновлений под тем же номером лаунчер сверяет SHA-256 архива.\n\nПакет устанавливается внутри WODCSA. Для новой установки распакуйте весь WOD-Launcher-2.0c-win64.zip.",
+    "tag_name": "launcher-1.0.21",
+    "body": "- ZIP мода, BIG лобби и DLL скачиваются параллельно.\n- Большие ZIP с Google Drive загружаются несколькими частями одновременно, если сервер поддерживает диапазоны.\n- Во время загрузки можно закрыть лаунчер через крестик. После подтверждения окно сразу закрывается, загрузка отменяется, временные файлы очищаются.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 772833923,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31218715,
-        "digest": "sha256:a451ea525918c13c700dc3ccccb9d13a5a3271dd21bd9355af3f7dca2363db10",
+        "id": 779625056,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31493769,
+        "digest": "sha256:55df8fb7dd70538d701847c503d31f65dff7f19218a977373418fe2b9251fd8e",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.8/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.21/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 772833661,
+        "id": 779625179,
         "name": "WoDLauncher.zip",
-        "size": 3224300,
-        "digest": "sha256:0731e01fd4144c558481f39eabffa021800c9c3614c8d08a5b9e1880e558dced",
+        "size": 3501066,
+        "digest": "sha256:0eb51a7dd56dd6e87f6b48134ef3bb8f4000f86e1a1504a583e0a48d7b40093e",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.8/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.21/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "launcher-1.0.9",
-    "body": "Поддержка публичного WoD 2.0d. Лаунчер выбирает нативный запуск по данным пакета. Стартер принимает корректный SkuDef независимо от его имени.\n\nДля новой установки распакуйте весь WOD-Launcher-2.0c-win64.zip. Переносимый лаунчер 1.0.8 предложит обновление через GitHub.",
+    "tag_name": "launcher-1.0.22",
+    "body": "- Общий ZIP с Google Drive загружается одним непрерывным запросом. При обрыве лаунчер продолжает с сохранённой позиции, когда сервер подтверждает, что файл совпадает.\n- BIG лобби и DLL с GitHub загружаются одновременно с ZIP.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 772921911,
-        "name": "WOD-Launcher-2.0c-win64.zip",
-        "size": 31222842,
-        "digest": "sha256:b11ea5d6763b16ebd9b4a5f89f6c4201a3182444347f2e6f313165993faf77f9",
+        "id": 779663839,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31491040,
+        "digest": "sha256:2ecf27477e90afaecc0f0d753a4237e9cf31c356cd7db19a65d238df72a34692",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.9/WOD-Launcher-2.0c-win64.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.22/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 772921431,
+        "id": 779663982,
         "name": "WoDLauncher.zip",
-        "size": 3226779,
-        "digest": "sha256:2d4d1f6b6828229f7ec64aea2a0d2e6b9c51bc5818f57b0b73cb1e15ac6d11b0",
+        "size": 3498307,
+        "digest": "sha256:fb5ecc539d0d98decf5e68de8ade911cfa186d01c8af9119626066f064d75a12",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.9/WoDLauncher.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.22/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "wod-2.0c",
-    "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.\n\nЕдиный архив `wod-multilingual.zip` собран в Modern SDK 1.0.7 для лаунчера 1.0.8 и новее. Русский и английский языковые BIG входят в один пакет.",
+    "tag_name": "launcher-1.0.23",
+    "body": "При запуске лаунчер удаляет временные папки скачивания и распаковки, оставшиеся после прерванных установок WarMind.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.\n",
     "draft": false,
+    "prerelease": false,
     "assets": [
       {
-        "id": 769127173,
-        "name": "wod-english.zip",
-        "size": 300612168,
-        "digest": "sha256:db3e6e4cb61b78886464e7b31e44b8766dbb644990ad13eb5746cbf0082db93d",
+        "id": 779697213,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31490203,
+        "digest": "sha256:63d0244265e6cf802feb1551f4880d1928dd11df3ea6b5eb9cf1fef36080b474",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-english.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.23/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 772829900,
-        "name": "wod-multilingual.zip",
-        "size": 295755720,
-        "digest": "sha256:4523e68c094fa07f9fdae010483137b3a5c3caa5d23d19bdc8a4194687f6396b",
+        "id": 779697407,
+        "name": "WoDLauncher.zip",
+        "size": 3499769,
+        "digest": "sha256:c4de6fd59f585573bf26fd8c6e9a7b161609a47fd1d3fdaaaf1574725e9197c5",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-multilingual.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.23/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
+    "tag_name": "launcher-1.0.24",
+    "body": "Лаунчер определяет совместимые версии движка RA3 1.12 по структуре файла и сообщает об ошибке до запуска игры, если расширение мода не удалось инициализировать.\n\nПоддержка щита на Retail 1.12 появится в следующем релизе WarMind. Общая WarMindExtension.dll для Retail и Steam / EA App обновляется вместе с модом.\n\nДля установки с нуля распакуйте WarMind-Launcher-win64.zip. Установленный лаунчер получит новую версию через автообновление.",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 780377291,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31491486,
+        "digest": "sha256:5bef0c582982e604f26ab1205c6e19d36bf6f5f0c7d266a7f78c485364de381c",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.24/WarMind-Launcher-win64.zip"
       },
       {
-        "id": 769110022,
-        "name": "wod-russian.zip",
-        "size": 300612572,
-        "digest": "sha256:bcbc4eb60ebe5d33d3356d31faa4a264e505862b95888d158b73555723d1a04a",
+        "id": 780376842,
+        "name": "WoDLauncher.zip",
+        "size": 3500378,
+        "digest": "sha256:f160644a0985605ae2217987063da78e4451f2a6e1add9b14899887797a30a77",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-russian.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.24/WoDLauncher.zip"
       }
     ]
   },
   {
-    "tag_name": "wod-2.0d",
-    "body": "Единая сборка Modern SDK 1.0.7. Английский языковой BIG содержит таблицу Mod.str, русский содержит gamestrings.csf. В русской таблице восстановлены используемые подписи наёмников, справочника и спецспособности.\n\nМод требует лаунчер 1.0.9. Язык переключается в меню лаунчера. Пакет устанавливается внутри WODCSA.",
+    "tag_name": "warmind-0.0a",
+    "body": "Новая нумерация тестовых сборок начинается с 0.0a. Для установки через лаунчер нужна версия 1.0.14 или новее.\n\nПакет состоит из трёх файлов. В обычном ZIP лежат общие BIG и оба языка. BIG лобби и WarMindExtension.dll опубликованы отдельно, чтобы их можно было подключать к новой сборке. Общий APT-интерфейс получает подписи из локализации WOD.\n\nИгровые данные основаны на WarMind 1.0a и исходниках Nope.mp4 `8e58a6a`. Добавлены ключи из изменения локализации `4875756`.\n",
     "draft": false,
+    "prerelease": true,
     "assets": [
       {
-        "id": 772914449,
-        "name": "wod-multilingual.zip",
-        "size": 295717675,
-        "digest": "sha256:f428ac4fdebaa45201843dd440fe47d14c619f1329a9f92d94cafcce7fea21e8",
+        "id": 776581941,
+        "name": "WarMind_0.0a_Lobby.big",
+        "size": 17007426,
+        "digest": "sha256:786f955ae2fafdc5fe69ee4821cec5ec04f7ff24f3f51850e5b953b932b1bcc4",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0d/wod-multilingual.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a/WarMind_0.0a_Lobby.big"
+      },
+      {
+        "id": 776581995,
+        "name": "WarMindExtension.dll",
+        "size": 363520,
+        "digest": "sha256:0fa7934b081fd96fa94b7b3a33ac0a5f1760f73a749471486f55d12150f43957",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a/WarMindExtension.dll"
       }
     ]
   },
   {
-    "tag_name": "wod-2.0e",
-    "body": "В меню «Дополнительно» появились «Экстра», «Фракции» и «Автовыбор». Личные настройки автовыбора применяются при выборе случайной стороны. США и наёмники доступны, когда их разрешает хост. При сужении списка в своей строке игрок видит новый значок.\n\nОдин архив включает русский и английский языки. Для работы новых правил нужен WoD Launcher 1.0.11. В матче «Сражение» проверены личный список и штатная жеребьёвка. Сетевой обмен проверен автоматически, живой матч между двумя клиентами ещё не проверен.",
+    "tag_name": "warmind-0.0a1",
+    "body": "\n\n### Скачать мод\n\nGoogle Drive: https://drive.google.com/file/d/16UmpLNyzavfAgCgjv9UtlHR5Gj32QH3S/view?usp=sharing\n\nSHA-256: a98bb58ca37152606bc05a10b447f3452da65d7874ecbfdda1d995c72883e361\n\nРазмер: 280917382\n",
     "draft": false,
+    "prerelease": true,
     "assets": [
       {
-        "id": 773340757,
-        "name": "wod-multilingual.zip",
-        "size": 295745925,
-        "digest": "sha256:53b5ac0e8a2385a0b1382bf549dc3e57922af9838b04393921835ac838855682",
+        "id": 776803416,
+        "name": "WarMind_0.0a1_Lobby.big",
+        "size": 17007426,
+        "digest": "sha256:786f955ae2fafdc5fe69ee4821cec5ec04f7ff24f3f51850e5b953b932b1bcc4",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0e/wod-multilingual.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a1/WarMind_0.0a1_Lobby.big"
+      },
+      {
+        "id": 776803542,
+        "name": "WarMindExtension.dll",
+        "size": 363520,
+        "digest": "sha256:0fa7934b081fd96fa94b7b3a33ac0a5f1760f73a749471486f55d12150f43957",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a1/WarMindExtension.dll"
       }
     ]
   },
   {
-    "tag_name": "wod-2.0f",
-    "body": "В интернет-лобби RA3BattleNet значок настроенного автовыбора теперь виден всем игрокам. Галочки остаются на устройстве игрока.\n\nХост передаёт согласованные результаты и ждёт подтверждения до запуска матча. Это устраняет путь, при котором результат гостя терялся при переходе из лобби в игру.\n\nАрхив включает русский и английский языки. Для сетевой игры всем нужен WoD Launcher 1.0.12 и WoD 2.0f. Исправления проверены автоматическими тестами. Живой матч между двумя клиентами ещё не проверен.",
+    "tag_name": "warmind-0.0a2",
+    "body": "## Изменения\n\n- Исправлено зависание при входе в одиночное «Сражение» без RA3BattleNet и вылет при открытии вкладки «Дополнительно».\n- Добавлен множитель дохода с шахт. Исправлено отображение дробных значений, добавлены русская и английская подписи.\n\nСборка использует общие игровые данные WarMind 0.0a1. Коммит локализации в исходниках Nope.mp4 — `285f53c`.\n\nДля установки выберите канал «Тестовая» в WarMind Launcher 1.0.16 или новее.\n\n## Скачать мод\n\nGoogle Drive: https://drive.google.com/file/d/17f7VEI93HstHuyJrItaywZEyRdb-l1np/view?usp=sharing\n\nSHA-256: 390d6cf3539dc7971e86d49c6f8d37261fc290754fd6dfdaed6517ec6b393a8a\n\nРазмер: 292751740\n",
     "draft": false,
+    "prerelease": true,
     "assets": [
       {
-        "id": 773430806,
-        "name": "wod-multilingual.zip",
-        "size": 295746197,
-        "digest": "sha256:9e4aa2f02d18a546e2e4be375e9259e2f2e7a7350c82923d45c7276192bf0e26",
+        "id": 777428323,
+        "name": "WarMind_0.0a2_Lobby.big",
+        "size": 17025066,
+        "digest": "sha256:8026860f5d049732673ff7eedb7afabc76efcaa330a12acf778ed6c0be6dc5f6",
         "state": "uploaded",
-        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0f/wod-multilingual.zip"
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a2/WarMind_0.0a2_Lobby.big"
+      },
+      {
+        "id": 777428410,
+        "name": "WarMindExtension.dll",
+        "size": 370176,
+        "digest": "sha256:a77b143767249a4fdc0c4619f3ef5ffd9d89d7b01311cd916b163a300356c1bc",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a2/WarMindExtension.dll"
+      }
+    ]
+  },
+  {
+    "tag_name": "warmind-0.0a3",
+    "body": "https://drive.google.com/file/d/16UmpLNyzavfAgCgjv9UtlHR5Gj32QH3S/view?usp=sharing",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 778570791,
+        "name": "WarMind_0.0a3_Lobby.big",
+        "size": 17025066,
+        "digest": "sha256:8026860f5d049732673ff7eedb7afabc76efcaa330a12acf778ed6c0be6dc5f6",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a3/WarMind_0.0a3_Lobby.big"
+      },
+      {
+        "id": 778570989,
+        "name": "WarMindExtension.dll",
+        "size": 370176,
+        "digest": "sha256:a77b143767249a4fdc0c4619f3ef5ffd9d89d7b01311cd916b163a300356c1bc",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a3/WarMindExtension.dll"
+      }
+    ]
+  },
+  {
+    "tag_name": "warmind-0.0a5",
+    "body": "## Изменения\n\n- Настройки лобби сохраняются в отдельном `WarMindLobby.ini` в профиле RA3. В сетевой игре каждый игрок сохраняет свои фракции автовыбора. Настройки матча сохраняются у хоста и в одиночном «Сражении».\n- Восстановлен значок кастомного рандома. Исправлены русские подписи «Разрешить Альянс» и «Разрешить Наёмников».\n- Обновлены варианты настройки «Доход с шахт» от x0,75 до x2,0.\n- Исправлены зависание при входе в одиночное «Сражение» без RA3BattleNet и вылет при открытии вкладки «Дополнительно».\n- Включены свежие изменения из `main` Warmind-Source-Code, включая новый дрон КША.\n\nДля установки выберите канал «Тестовая» в WarMind Launcher 1.0.17 или новее.\n\n## Скачать мод\n\nhttps://drive.google.com/file/d/1MbWrq_SgLWtpOrliMz-19Wby5gIuHVYl/view?usp=sharing\n",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 779269434,
+        "name": "WarMind_0.0a5_Lobby.big",
+        "size": 17027554,
+        "digest": "sha256:c5b47bfd34c257e051b15327b406e53081b9b5f26c0ce6a10808d65d448c8270",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a5/WarMind_0.0a5_Lobby.big"
+      },
+      {
+        "id": 779269525,
+        "name": "WarMindExtension.dll",
+        "size": 473600,
+        "digest": "sha256:aa1360b034b643e32b2d97c74178c84ba16f1dd4eb0c1498e1d6662cff283518",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a5/WarMindExtension.dll"
+      }
+    ]
+  },
+  {
+    "tag_name": "warmind-0.0a6",
+    "body": "## Изменения\n\n- Добавлен модуль отражения урона `YurikoShieldSphereUpdate` и схемы для его использования в RA3 Mod Studio. Модуль можно подключать к юнитам через их XML.\n- Исправлено сохранение разрешённых фракций, дохода с шахт и личного автовыбора. Настройки хозяина сетевой игры и одиночного «Сражения» сохраняются отдельно.\n- Включены последние исправления локализации из исходников WarMind.\n\nДля установки выберите канал «Тестовая» в WarMind Launcher.\n\n## Скачать мод\n\nhttps://drive.google.com/file/d/1MbWrq_SgLWtpOrliMz-19Wby5gIuHVYl/view?usp=sharing\n",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 779911934,
+        "name": "WarMind_0.0a6_Lobby.big",
+        "size": 17027994,
+        "digest": "sha256:1386fff36bec5c8bc9e20841a6d415cee23f1943343d3b24c3952aa3e6f1d3cc",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a6/WarMind_0.0a6_Lobby.big"
+      },
+      {
+        "id": 779912012,
+        "name": "WarMindExtension.dll",
+        "size": 562176,
+        "digest": "sha256:1ee721f7641a6c4068b5a9891a19f024d5d7f54ed0f08959a04917139422a29b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a6/WarMindExtension.dll"
       }
     ]
   }
