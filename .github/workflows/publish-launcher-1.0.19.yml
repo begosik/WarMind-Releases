@@ -1,0 +1,66 @@
+name: Publish WarMind Launcher 1.0.19
+
+on:
+  push:
+    branches: [codex/publish-launcher-1.0.19]
+
+concurrency:
+  group: publish-launcher-1.0.19
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'begosik/WarMind-Releases'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: launcher-1.0.19
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Verify and publish the launcher release
+        shell: bash
+        run: |
+          cd release-1.0.19
+          sha256sum --check SHA256SUMS
+          api="repos/$GITHUB_REPOSITORY/releases"
+          release_id=$(gh api --paginate "$api?per_page=100" --jq \
+            '.[] | select(.tag_name == "launcher-1.0.19") | .id')
+          if [[ -z "$release_id" ]]; then
+            gh release create "$RELEASE_TAG" --target main --draft \
+              --title 'WarMind Launcher 1.0.19' --notes-file notes.md
+            release_id=$(gh release view "$RELEASE_TAG" --json databaseId --jq .databaseId)
+          fi
+
+          gh api "$api/$release_id" > release.json
+          jq -e --rawfile body notes.md \
+            '.tag_name == "launcher-1.0.19" and .target_commitish == "main" and .draft and (.prerelease == false) and ((.body | rtrimstr("\n")) == ($body | rtrimstr("\n")))' \
+            release.json > /dev/null
+
+          while read -r sha name; do
+            size=$(wc -c < "$name")
+            if ! jq -e --arg name "$name" --arg digest "sha256:$sha" --argjson size "$size" \
+              '.assets | any(.name == $name and .state == "uploaded" and .size == $size and .digest == $digest)' \
+              release.json > /dev/null; then
+              gh release upload "$RELEASE_TAG" "$name"
+            fi
+          done < SHA256SUMS
+
+          gh api "$api/$release_id" > release.json
+          jq -e '.assets | length == 2' release.json > /dev/null
+          while read -r sha name; do
+            size=$(wc -c < "$name")
+            jq -e --arg name "$name" --arg digest "sha256:$sha" --argjson size "$size" \
+              '.assets | any(.name == $name and .state == "uploaded" and .size == $size and .digest == $digest)' \
+              release.json > /dev/null
+          done < SHA256SUMS
+
+          gh release edit "$RELEASE_TAG" --draft=false --latest
+          gh api "$api/tags/$RELEASE_TAG" --jq \
+            'select(.draft == false and .prerelease == false) | .html_url' > release-url.txt
+          test -s release-url.txt
+          cat release-url.txt
