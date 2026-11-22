@@ -7,3 +7,5 @@
 Для установки выберите канал «Тестовая» в WarMind Launcher.
 
 ## Скачать мод
+
+https://drive.google.com/file/d/1MbWrq_SgLWtpOrliMz-19Wby5gIuHVYl/view?usp=sharing
