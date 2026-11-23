@@ -1,5 +1,28 @@
 [
   {
+    "tag_name": "warmind-0.0a8",
+    "body": "## Изменения\n\n- Щит отражает снаряды с учётом направления пересечения купола, набранной скорости, траектории и разброса. Ненаводящиеся снаряды сохраняют баллистический полёт.\n- Добавлено видимое отражение луча гига-крепости и способности «Бурана», отражение ударов ближнего боя и взаимодействие купола с магнитным лучом «Апокалипсиса».\n- Отражённая заморозка замедляет «Буран». Вертолёт сохраняет возможность стрелять до полной заморозки и падает при достижении порога.\n- Исправлен вылет панели при появлении девятой карточки. Карточки протоколов с исходной перезарядкой 0 с показываются без цифр. Готовые супероружия сохраняют таймер 0:00.\n\nДля установки выберите канал «Тестовая» в WarMind Launcher.\n\n## Скачать мод\n\nhttps://drive.google.com/file/d/1MbWrq_SgLWtpOrliMz-19Wby5gIuHVYl/view?usp=sharing\n",
+    "draft": false,
+    "assets": [
+      {
+        "id": 782259432,
+        "name": "WarMind_0.0a8_Lobby.big",
+        "size": 17027994,
+        "digest": "sha256:1386fff36bec5c8bc9e20841a6d415cee23f1943343d3b24c3952aa3e6f1d3cc",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a8/WarMind_0.0a8_Lobby.big"
+      },
+      {
+        "id": 782259339,
+        "name": "WarMindExtension.dll",
+        "size": 625664,
+        "digest": "sha256:a15143cda7302fb9872bee5bd482c7bc6f1d5f0c74bf18a3d4b90df270e1126f",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0a8/WarMindExtension.dll"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.14",
     "body": "Лаунчер скачивает обычный ZIP, общий BIG лобби и WarMindExtension.dll для выбранной версии мода. Каждый файл проверяется по SHA-256. В канале Test доступна новая нумерация WarMind начиная с 0.0a.\n\nДля первой установки скачайте полный WarMind-Launcher-win64.zip. Файл WoDLauncher.zip используется для автоматического обновления.\n",
     "draft": false,
