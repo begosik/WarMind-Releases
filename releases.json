@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "launcher-1.0.25",
+    "body": "- Перед запуском игры лаунчер восстанавливает служебные значения реестра 32-битной Red Alert 3. Путь установки, язык и лицензионные данные сохраняются.\n- Повреждённый список игроков в `Skirmish.ini` восстанавливается автоматически. Исходный файл сохраняется с суффиксом `.warmind-before-fix`.\n- Лаунчер автоматически применяет 4 GB Patch к отдельной копии движка. Если флаг уже установлен, используется текущий движок.\n\nДля первой установки скачайте `WarMind-Launcher-win64.zip`. Файл `WoDLauncher.zip` используется для автоматического обновления.\n\nКоммит исходников `ef35a7e94c0f86753af060a9518c95b9a05e8470`.",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 784015551,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31539320,
+        "digest": "sha256:ae1dfaaac78463b8aa4fd1f0a371c0ba1e7ecf9b55966d0c446eef53bb4b6df7",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.25/WarMind-Launcher-win64.zip"
+      },
+      {
+        "id": 784017987,
+        "name": "WoDLauncher.zip",
+        "size": 3547433,
+        "digest": "sha256:2568fe8224efee116653b0cd80ae6b54e09e577981f3769a865faabdb17b4634",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.25/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "warmind-0.0a8",
     "body": "## Изменения\n\n- Щит отражает снаряды с учётом направления пересечения купола, набранной скорости, траектории и разброса. Ненаводящиеся снаряды сохраняют баллистический полёт.\n- Добавлено видимое отражение луча гига-крепости и способности «Бурана», отражение ударов ближнего боя и взаимодействие купола с магнитным лучом «Апокалипсиса».\n- Отражённая заморозка замедляет «Буран». Вертолёт сохраняет возможность стрелять до полной заморозки и падает при достижении порога.\n- Исправлен вылет панели при появлении девятой карточки. Карточки протоколов с исходной перезарядкой 0 с показываются без цифр. Готовые супероружия сохраняют таймер 0:00.\n\nДля установки выберите канал «Тестовая» в WarMind Launcher.\n\n## Скачать мод\n\nhttps://drive.google.com/file/d/1MbWrq_SgLWtpOrliMz-19Wby5gIuHVYl/view?usp=sharing\n",
     "draft": false,
