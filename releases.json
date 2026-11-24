@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "launcher-1.0.26",
+    "body": "- Новый стартер подключает DLL WarMind через загрузчик Windows перед запуском игровых данных. Исправлена ошибка загрузки расширения, которая проявлялась на некоторых установках RA3 1.12.\n- При автообновлении стартер и DLL запуска устанавливаются автоматически.\n- WoDGameStart.log хранит только последнюю попытку запуска. Длинные пути в журнале сокращаются.\n\nДля первой установки скачайте WarMind-Launcher-win64.zip. Установленный WarMind Launcher обновляется через WoDLauncher.zip.\n\n[Коммит исходников](https://github.com/begosik/RA3-WOD-Division-Launcher/commit/a5073f151f6b194b250c6867c78514ac08e5c603).",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 786905384,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31694933,
+        "digest": "sha256:9e9c31cd2199ea0cde654fd3257097024f966e8fc1ab7b70f7c2ffb5224a2746",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.26/WarMind-Launcher-win64.zip"
+      },
+      {
+        "id": 786905770,
+        "name": "WoDLauncher.zip",
+        "size": 3611205,
+        "digest": "sha256:d0e5961367aed04bb2a3bf52eab839d06320f27517227cc109a5b0be7d8e5079",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.26/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.25",
     "body": "- Перед запуском игры лаунчер восстанавливает служебные значения реестра 32-битной Red Alert 3. Путь установки, язык и лицензионные данные сохраняются.\n- Повреждённый список игроков в `Skirmish.ini` восстанавливается автоматически. Исходный файл сохраняется с суффиксом `.warmind-before-fix`.\n- Лаунчер автоматически применяет 4 GB Patch к отдельной копии движка. Если флаг уже установлен, используется текущий движок.\n\nДля первой установки скачайте `WarMind-Launcher-win64.zip`. Файл `WoDLauncher.zip` используется для автоматического обновления.\n\nКоммит исходников `ef35a7e94c0f86753af060a9518c95b9a05e8470`.",
     "draft": false,
