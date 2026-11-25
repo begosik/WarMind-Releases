@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "warmind-0.0b1",
+    "body": "https://drive.google.com/file/d/1YJJ9OiAbMsB3O2ise2uYB-SMrGQC5voo/view?usp=sharing\n\n[0.0b1]\n\n# Шейдеры и техника\n\n- «Железный занавес» учитывает прозрачность исходной текстуры. Заморозка сохраняет контуры объектов.\n- Колёса и гусеницы учитывают скорость техники и разворот на месте.\n- Патриот США переключает оружие, когда уже выбранная цель садится или взлетает. БМП и другая техника с включённым `RotateToTargetWhenAiming` разворачивают корпус при атаке цели и при атаке по земле.\n- Пушка и лазер Хроно-турели наводятся на самолёт или вертолёт по высоте цели над водой.\n- «Аллигатор» снова погружается и всплывает при переключении режима.\n- Способности с ограничением проходимости учитывают поверхность воды. Исправлены наведение на воздушные цели и точка вылета снаряда у прикреплённых моделей.\n\n# Моддинг\n\n- `TruckDrawWithTires` добавляет настройку отдельных колёс. `AmmoStatusUpdate` выставляет статус при пустом магазине.\n- Схемы собираются штатным Mod Studio 1.0.18.\n\n[Исходники релиза](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/commit/6f8b470f645f3415db1d3141a59fe38216dab5d5) · [PR #13](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/13)\n",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 792128408,
+        "name": "WarMindExtension.dll",
+        "size": 873984,
+        "digest": "sha256:bbb8cc8bfbc9f56957c27eb65e417438f4146c5111028f745a200fcbef450884",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0b1/WarMindExtension.dll"
+      },
+      {
+        "id": 792128543,
+        "name": "WarMind_0.0b1_Lobby.big",
+        "size": 17074218,
+        "digest": "sha256:dfd2bccc229c39cccb184ed94ea447653c701554441c24aee70c015df157f2a3",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0b1/WarMind_0.0b1_Lobby.big"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.28",
     "body": "- Лаунчер в фоне скачивает TXT-патчноуты, прикреплённые к релизу выбранной версии WarMind. Поддерживаются имена `PatchNote_Eng.txt`, `PatchNote_Rus.txt` и варианты с номером, например `PatchNote_0.0b0_Eng.txt` и `PatchNote_0.0b0_Rus.txt`.\n- Патчноут переключается вместе с языком лаунчера. Файл с совпадающим номером версии имеет приоритет. Если подходящего русского текста нет, используется английский. Скачанные файлы используются повторно до закрытия лаунчера.\n\nДля первой установки распакуйте `WarMind-Launcher-win64.zip` целиком. Для установленного лаунчера доступно автообновление через `WoDLauncher.zip`.\n\n[Коммит исходников](https://github.com/begosik/RA3-WOD-Division-Launcher/commit/6aef07781257f509951d791efe61de9e4cca9009)",
     "draft": false,
