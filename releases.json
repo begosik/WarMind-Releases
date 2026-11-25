@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "launcher-1.0.28",
+    "body": "- Лаунчер в фоне скачивает TXT-патчноуты, прикреплённые к релизу выбранной версии WarMind. Поддерживаются имена `PatchNote_Eng.txt`, `PatchNote_Rus.txt` и варианты с номером, например `PatchNote_0.0b0_Eng.txt` и `PatchNote_0.0b0_Rus.txt`.\n- Патчноут переключается вместе с языком лаунчера. Файл с совпадающим номером версии имеет приоритет. Если подходящего русского текста нет, используется английский. Скачанные файлы используются повторно до закрытия лаунчера.\n\nДля первой установки распакуйте `WarMind-Launcher-win64.zip` целиком. Для установленного лаунчера доступно автообновление через `WoDLauncher.zip`.\n\n[Коммит исходников](https://github.com/begosik/RA3-WOD-Division-Launcher/commit/6aef07781257f509951d791efe61de9e4cca9009)",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 791855266,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31740314,
+        "digest": "sha256:d56308d9e15c1a4249058ba89f5616d547b3ff117ca95c6de85562f475c78d5f",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.28/WarMind-Launcher-win64.zip"
+      },
+      {
+        "id": 791856817,
+        "name": "WoDLauncher.zip",
+        "size": 3656404,
+        "digest": "sha256:d375b40edb8dbaaa0bec1e9ade5101626e79255428cb376338d13be266ab05da",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.28/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.27",
     "body": "- Кнопка запуска показывает **«Запущено»**, пока открыт Red Alert 3. После выхода из игры кнопка снова доступна.\n- Справа от панели советов появились две квадратные кнопки. Верхняя переключает советы и патчноут выбранной версии, нижняя показывает следующий совет.\n- В патчноуте можно сворачивать вложенные категории. Комментарии к изменениям выделяются серым курсивом. Поддерживаются иконки PNG и TGA с прозрачностью и локальные патчноуты в папке `Data/patchNotes`.\n\nДля первой установки распакуйте `WarMind-Launcher-win64.zip` целиком. Для установленного лаунчера доступно автообновление через `WoDLauncher.zip`.\n\n[Коммит исходников](https://github.com/begosik/RA3-WOD-Division-Launcher/commit/7fbbc4551ea4555dd556025b11955f9d575282ef)",
     "draft": false,
