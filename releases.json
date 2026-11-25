@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "launcher-1.0.27",
+    "body": "- Кнопка запуска показывает **«Запущено»**, пока открыт Red Alert 3. После выхода из игры кнопка снова доступна.\n- Справа от панели советов появились две квадратные кнопки. Верхняя переключает советы и патчноут выбранной версии, нижняя показывает следующий совет.\n- В патчноуте можно сворачивать вложенные категории. Комментарии к изменениям выделяются серым курсивом. Поддерживаются иконки PNG и TGA с прозрачностью и локальные патчноуты в папке `Data/patchNotes`.\n\nДля первой установки распакуйте `WarMind-Launcher-win64.zip` целиком. Для установленного лаунчера доступно автообновление через `WoDLauncher.zip`.\n\n[Коммит исходников](https://github.com/begosik/RA3-WOD-Division-Launcher/commit/7fbbc4551ea4555dd556025b11955f9d575282ef)",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "id": 791688396,
+        "name": "WarMind-Launcher-win64.zip",
+        "size": 31738047,
+        "digest": "sha256:55d4e1500758d3bd213f1631fe27e5a6d6c7e171a3287ef61ed4b863055f7517",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.27/WarMind-Launcher-win64.zip"
+      },
+      {
+        "id": 791691022,
+        "name": "WoDLauncher.zip",
+        "size": 3653270,
+        "digest": "sha256:6f59eab7c7293ab2bb9c95050b6c269f5fe44aef0ecc4d9e29b9fe5a1c19d936",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/launcher-1.0.27/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.26",
     "body": "- Новый стартер подключает DLL WarMind через загрузчик Windows перед запуском игровых данных. Исправлена ошибка загрузки расширения, которая проявлялась на некоторых установках RA3 1.12.\n- При автообновлении стартер и DLL запуска устанавливаются автоматически.\n- WoDGameStart.log хранит только последнюю попытку запуска. Длинные пути в журнале сокращаются.\n\nДля первой установки скачайте WarMind-Launcher-win64.zip. Установленный WarMind Launcher обновляется через WoDLauncher.zip.\n\n[Коммит исходников](https://github.com/begosik/RA3-WOD-Division-Launcher/commit/a5073f151f6b194b250c6867c78514ac08e5c603).",
     "draft": false,
