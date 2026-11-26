@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "warmind-0.0b2",
+    "body": "https://drive.google.com/file/d/1jP4961va3Xw1M9nD_K6C3RkigoKHpFgy/view?usp=sharing\n\n[0.0b2]\n\n# Щит Юрико и Гатор\n\n- Оптимизированы проверки прямых выстрелов, трассеров и снарядов у щита Юрико. Прямые выстрелы между двумя внешними точками отбрасываются раньше. Настройки и правила отражения читаются вместе.\n- Гатор сохраняет возможность выйти на сушу после погружения и всплытия.\n\n[Исходники сборки](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/commit/52dfccb42e311099206b4b07d80040875370a72d) · [Гатор](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/15) · [Щит Юрико](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/16)\n",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 796007708,
+        "name": "WarMindExtension.dll",
+        "size": 868352,
+        "digest": "sha256:64c89cae4b8edc1432f9651f093da7749135e746dcd4399c78e6ea68270b6e51",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0b2/WarMindExtension.dll"
+      },
+      {
+        "id": 796007793,
+        "name": "WarMind_0.0b2_Lobby.big",
+        "size": 17074218,
+        "digest": "sha256:dfd2bccc229c39cccb184ed94ea447653c701554441c24aee70c015df157f2a3",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0b2/WarMind_0.0b2_Lobby.big"
+      }
+    ]
+  },
+  {
     "tag_name": "warmind-0.0b1",
     "body": "https://drive.google.com/file/d/1YJJ9OiAbMsB3O2ise2uYB-SMrGQC5voo/view?usp=sharing\n\n[0.0b1]\n\n# Шейдеры и техника\n\n- «Железный занавес» учитывает прозрачность исходной текстуры. Заморозка сохраняет контуры объектов.\n- Колёса и гусеницы учитывают скорость техники и разворот на месте.\n- Патриот США переключает оружие, когда уже выбранная цель садится или взлетает. БМП и другая техника с включённым `RotateToTargetWhenAiming` разворачивают корпус при атаке цели и при атаке по земле.\n- Пушка и лазер Хроно-турели наводятся на самолёт или вертолёт по высоте цели над водой.\n- «Аллигатор» снова погружается и всплывает при переключении режима.\n- Способности с ограничением проходимости учитывают поверхность воды. Исправлены наведение на воздушные цели и точка вылета снаряда у прикреплённых моделей.\n\n# Моддинг\n\n- `TruckDrawWithTires` добавляет настройку отдельных колёс. `AmmoStatusUpdate` выставляет статус при пустом магазине.\n- Схемы собираются штатным Mod Studio 1.0.18.\n\n[Исходники релиза](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/commit/6f8b470f645f3415db1d3141a59fe38216dab5d5) · [PR #13](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/13)\n",
     "draft": false,
