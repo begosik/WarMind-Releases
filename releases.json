@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "warmind-0.0b3",
+    "body": "https://drive.google.com/file/d/1zd5AmmMSssg7g8SyTDyAaZruw8nK0gHX/view?usp=drivesdk\n\n[0.0b3]\n\n## Кампания и операции\n\n- Добавлены девять глав кампании США и четыре операции из Division.\n- Добавлены отдельные списки одиночных и совместных миссий. Совместные карты передаются и загружаются из каталога Missions.\n\n## Сражение и щит Юрико\n\n- Исправлена передача настроек «Экстра» и сохранение настроек лобби в новых реплеях. Сетевой автовыбор выполняется при подготовке к старту после готовности игроков.\n- Щит отражает снаряды после гибели стрелка. Ненаводящиеся снаряды возвращаются в точку запуска, самонаводящиеся используют последнюю известную позицию стрелка.\n- Волны Железного Ронина и Дельфина отражаются на оставшуюся дистанцию. Сокращено количество повторных чтений списка щитов.\n\nВыберите канал «Тестовая» в WarMind Launcher.\n\n[Исходники сборки](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/commit/2459414a606291165e50fdfe038ae5575730aa32) · [Кампания и операции](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/26) · [Щит Юрико](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/27)\n",
+    "draft": false,
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 804339080,
+        "name": "WarMindExtension.dll",
+        "size": 1100800,
+        "digest": "sha256:27a6308d7c2abce6f67661b6553414cf991d84407c1fb2a5aea78f852e089822",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0b3/WarMindExtension.dll"
+      },
+      {
+        "id": 804370623,
+        "name": "WarMind_0.0b3_Lobby.big",
+        "size": 29727841,
+        "digest": "sha256:fe27ea1e23ef46ca96445c3c8e43b7caa2f77537163efdf4c4fd093ed065fc3f",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WarMind-Releases/releases/download/warmind-0.0b3/WarMind_0.0b3_Lobby.big"
+      }
+    ]
+  },
+  {
     "tag_name": "warmind-0.0b2",
     "body": "https://drive.google.com/file/d/1jP4961va3Xw1M9nD_K6C3RkigoKHpFgy/view?usp=sharing\n\n[0.0b2]\n\n# Щит Юрико и Гатор\n\n- Оптимизированы проверки прямых выстрелов, трассеров и снарядов у щита Юрико. Прямые выстрелы между двумя внешними точками отбрасываются раньше. Настройки и правила отражения читаются вместе.\n- Гатор сохраняет возможность выйти на сушу после погружения и всплытия.\n\n[Исходники сборки](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/commit/52dfccb42e311099206b4b07d80040875370a72d) · [Гатор](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/15) · [Щит Юрико](https://github.com/AlekseyYurchenkov/Warmind-Source-Code/pull/16)\n",
     "draft": false,
